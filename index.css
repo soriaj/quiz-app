@@ -198,8 +198,7 @@ img {
       font-size: 1.2rem;
    }
 }
-@media screen and 
-   (max-width: 320px) {
+@media screen and (max-width: 320px) {
    .navbar {
       justify-content: center;
    }
