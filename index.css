@@ -188,6 +188,9 @@ img {
    .questionsForm h1 {
       font-size: 1.4rem;
    }
+   .start_btn{
+      font-size: 1rem;
+   }
    .btn {
       font-size: 1rem;
    }
@@ -221,6 +224,9 @@ img {
    }
    .questionsForm h1 {
       font-size: 1.4rem;
+   }
+   .start_btn {
+      font: 1rem;
    }
    .btn {
       font-size: 1rem;
