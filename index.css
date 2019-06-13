@@ -5,7 +5,7 @@
    color: white;
 }
 html {
-   background: url("https://png.pngtree.com/thumb_back/fw800/back_pic/00/14/65/3256657136926fa.jpg") no-repeat fixed;
+   background: url("https://png.pngtree.com/thumb_back/fw800/back_pic/00/14/65/3256657136926fa.jpg") fixed;
    background-size: cover;
 }
 body {
@@ -45,6 +45,9 @@ img {
    text-transform: uppercase;
    text-align: center;
 }
+.intro {
+   font-size: 2.4rem;
+}
 .intro h1 {
    margin: 20px auto;
 }
@@ -52,6 +55,7 @@ img {
    margin: 20px 0;
 }
 .start_btn{
+   font-size: 1.5rem;
    font-weight: 600;
    background-color: rgb(1, 161, 39);
    border: none;
