@@ -5,8 +5,13 @@
    color: white;
 }
 html {
-   background: url("https://png.pngtree.com/thumb_back/fw800/back_pic/00/14/65/3256657136926fa.jpg") fixed;
+   background: url("https://png.pngtree.com/thumb_back/fw800/back_pic/00/14/65/3256657136926fa.jpg") no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
    background-size: cover;
+   height: 100%;
+   overflow: hidden;
 }
 body {
    margin: 0;
