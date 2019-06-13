@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="Welcome to the quiz app">
+   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Rubik&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="index.css">
+   <title>Quiz App</title>
+</head>
+<body>
+   <!---HOME PAGE THAT-->
+   <header class="navbar">
+      <a href="#questions" class="js_question_count">Question: <span></span></a>
+      <a href="#scores" class="js_score_count">Score: <span>0</span></a>      
+    </header>
+    
+    <!--INITIAL PAGE LOAD DISPLAY-->
+    <main class="main">
+      <section class="page_display js_page_display"> <!--ADD/REMOVE HIDDEN CLASS HERE TO TOGGLE THIS SECTION VIEWING-->
+         <div class="intro">
+            <h1>How well do you think you know technology?</h1>
+            <p>Find out by starting the quiz now</p>
+            <form>
+               <button role="button" aria-label="start button" aria-pressed="false" class="start_btn">Click to begin</button>
+            </form>         
+         </div>
+
+         <!--QUESTIONS WILL BE POPULATED HERE-->
+         <div class="questionsForm js_questionsForm"></div>
+
+    </main>
+
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   <script src="index.js"></script>
+</body>
+</html>
