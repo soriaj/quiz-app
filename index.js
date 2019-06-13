@@ -6,24 +6,24 @@ let score = 0;
 // Question pool and answers
 const QUESTIONS = [
    {
-      question: 'What technology is used to record cryptocurrency transactions?',
+      question: 'What is an Amazon Availability Zone?',
       answers: {
-         a: 'Digital wallet',
-         b: 'Mining',
-         c: 'Blockchain',
-         d: 'Token'
+         a: 'A geographic area',
+         b: 'The cloud',
+         c: 'One or more discrete data centers near each other',
+         d: 'An endpoint used for caching content'
       },
-      correctAnswer: 'Blockchain'
+      correctAnswer: 'One or more discrete data centers near each other'
    },
    {
-      question: 'What tool would you use to reduce the digital image size?',
+      question: 'What is AWS Storage Gateway?',
       answers: {
-         a: 'Filter',
-         b: 'Brush',
-         c: 'Rotate',
-         d: 'Crop'
+         a: 'It allows a direct MPLS connection in to AWS',
+         b: 'None of the above',
+         c: 'It is a physical or virtual appliance that can be used to cache S3 locally at a customer\'s site',
+         d: 'It allows large scale import/exports in to the AWS cloud without the use of an internet connection'
       },
-      correctAnswer: 'Crop'
+      correctAnswer: 'It is a physical or virtual appliance that can be used to cache S3 locally at a customer\'s site'
    },
    {
       question: 'What kind of malware is designed to take advantage of a security hole before it is known?',
@@ -36,7 +36,7 @@ const QUESTIONS = [
       correctAnswer: 'Zero-day exploit'
    },
    {
-      question: 'What does acronym FOSS stand for?',
+      question: 'What does the acronym FOSS stand for?',
       answers: {
          a: 'Free and Open-Source Software',
          b: 'Full Option Sensor System',
@@ -56,14 +56,14 @@ const QUESTIONS = [
       correctAnswer: 'Organize cloud storage'
    },
    {
-      question: 'What is a container?',
+      question: 'What is Docker?',
       answers: {
          a: 'A way of shipping things',
          b: 'A device to store things in your garage',
-         c: 'Standard unit of software that packages up code and all its dependencies',
-         d: 'Application management'
+         c: 'An open source project that makes it easy to create containers and container-based apps',
+         d: 'A virtual machine'
       },
-      correctAnswer: 'Standard unit of software that packages up code and all its dependencies'
+      correctAnswer: 'An open source project that makes it easy to create containers and container-based apps'
    },
    {
       question: 'What technology is used to make telephone calls over the Internet possible?',
@@ -86,7 +86,7 @@ const QUESTIONS = [
       correctAnswer: 'Folder'
    },
    {
-      question: 'What programming language are you learning in this course?',
+      question: 'What programming language is used to control the behavior of different elements on a webpage?',
       answers: {
          a: 'Java',
          b: 'Python',
@@ -96,7 +96,7 @@ const QUESTIONS = [
       correctAnswer: 'JavaScript'
    },
    {
-      question: 'Which direction does JQuery closest method traverse the DOM?',
+      question: 'Which direction does JQuery\'s closest method traverse the DOM?',
       answers: {
          a: 'Down',
          b: 'Left',
@@ -113,20 +113,20 @@ function generateQuestionsElement(questionList){
       return `
          <h1>${questionList.question}</h1>
          <form action="" method="get" class="questions_form">
-            <label for="option" class="options option-1">
-               <input type="radio" name="option" value="${questionList.answers.a}" required>
+            <label for="${questionList.answers.a}" class="options option-1">
+               <input type="radio" name="option" id="${questionList.answers.a}" value="${questionList.answers.a}" required>
                <span>${questionList.answers.a}</span>
             </label>
-            <label for="option" class="options option-2">
-               <input type="radio" name="option" vale="${questionList.answers.b}" required>
+            <label for="${questionList.answers.b}" class="options option-2">
+               <input type="radio" name="option" id="${questionList.answers.b}" value="${questionList.answers.b}" required>
                <span>${questionList.answers.b}</span>
             </label>
-            <label for="option" class="options option-3">
-               <input type="radio" name="option" value="${questionList.answers.c}" required>
+            <label for="${questionList.answers.c}" class="options option-3">
+               <input type="radio" name="option" id="${questionList.answers.c}" value="${questionList.answers.c}" required>
                <span>${questionList.answers.c}</span>
             </label>
-            <label for="option" class="options option-4">
-               <input type="radio" name="option" value="${questionList.answers.d}" required>
+            <label for="${questionList.answers.d}" class="options option-4">
+               <input type="radio" name="option" id="${questionList.answers.d}" value="${questionList.answers.d}" required>
                <span>${questionList.answers.d}</span>
             </label>
             <button type="submit" role="button" aria-label="question submit button" aria-pressed="false" class="btn">Submit</button>
