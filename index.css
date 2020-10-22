@@ -5,50 +5,47 @@
    color: white;
 }
 html {
-   background: url("https://png.pngtree.com/thumb_back/fw800/back_pic/00/14/65/3256657136926fa.jpg") no-repeat center center fixed;
+   background: black;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
    height: 100vh;
-   overflow: hidden;
 }
 body {
    margin: 0;
    color: white;
 }
 .navbar {
-   overflow: hidden;
+
    top: 0;
-   width: 100%;
-   height: 15%;
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
-   margin: 40px auto;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 15px;
+   max-width: 768px;
+   
 }
 .navbar a {
-   margin-right: 10px;
-   text-align: center;
-   padding: 14px 16px;
    text-decoration: none;
-   font-size: 2.5rem;
+   font-size: 1.4rem;
    text-transform: uppercase;
    color: white;
 }
 img {
-   border: 1px solid red;
    width: 50px;
 }
 .main {
-   padding: 20px;
    margin-left: auto;
    margin-right: auto;
+   max-width: 768px;
 }
 .page_display {
-   margin: 0 auto;
    padding: 20px;
-   width: 66%;
    text-transform: uppercase;
    text-align: center;
 }
@@ -125,9 +122,11 @@ img {
    background-color: rgb(30, 32, 41);
    transition: 0.4s ease;
 }
+.radio-label {
+   margin-left: 10px;
+}
 .correct {
    font-size: 1.5rem;
-   width: 65%;
    margin: 0 auto;
    text-align: center;
    background: linear-gradient(to bottom, rgb(8, 71, 246) 0%, rgba(3, 36, 128, 0.849) 100%);
@@ -145,45 +144,4 @@ img {
 }
 .hidden {
    display: none;
-}
-
-@media screen and (max-width: 1000px) {
-   .navbar {
-      justify-content: center;
-   }
-   .navbar a {
-      margin-right: 0;
-      font-size: 20px;
-   }
-   img {
-      width: 35px;
-      float: center;
-   }
-   .main {
-      padding: 0;
-   }
-   .page_display {
-      width: 100%;
-   }
-   .questions_form {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-   }
-   .questionsForm h1 {
-      font-size: 1.4rem;
-   }
-   .start_btn {
-      font: 1rem;
-   }
-   .btn {
-      font-size: 1rem;
-   }
-   .options {
-      font-size: 1.2rem;
-   }
-   .correct {
-      width: 100%;
-      font-size: 1rem;
-   }
 }

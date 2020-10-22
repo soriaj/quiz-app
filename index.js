@@ -115,19 +115,19 @@ function generateQuestionsElement(questionList){
          <form action="" method="get" class="questions_form">
             <label for="${questionList.answers.a}" class="options option-1">
                <input type="radio" name="option" id="${questionList.answers.a}" value="${questionList.answers.a}" required>
-               <span>${questionList.answers.a}</span>
+               <span class='radio-label'>${questionList.answers.a}</span>
             </label>
             <label for="${questionList.answers.b}" class="options option-2">
                <input type="radio" name="option" id="${questionList.answers.b}" value="${questionList.answers.b}" required>
-               <span>${questionList.answers.b}</span>
+               <span class='radio-label'>${questionList.answers.b}</span>
             </label>
             <label for="${questionList.answers.c}" class="options option-3">
                <input type="radio" name="option" id="${questionList.answers.c}" value="${questionList.answers.c}" required>
-               <span>${questionList.answers.c}</span>
+               <span class='radio-label'>${questionList.answers.c}</span>
             </label>
             <label for="${questionList.answers.d}" class="options option-4">
                <input type="radio" name="option" id="${questionList.answers.d}" value="${questionList.answers.d}" required>
-               <span>${questionList.answers.d}</span>
+               <span class='radio-label'>${questionList.answers.d}</span>
             </label>
             <button type="submit" role="button" aria-label="question submit button" aria-pressed="false" class="btn">Submit</button>
          </form>`;
@@ -192,7 +192,7 @@ function checkUserAnswer(){
 function displayCorrectFeedBackPage(){
    return `
       <div class="correct">
-         <img src="https://i.ibb.co/9Yjhqhr/Green-Check-Mark.jpg" alt="check mark">
+         <img src="https://www.iconsdb.com/icons/preview/green/check-mark-3-xxl.png" alt="check mark">
          <p>Congrats, You got that right</p>
          <form>
             <button role="button" aria-label="next question" aria-pressed="false" class="btn js_next_question">Next Question</button>
@@ -203,7 +203,7 @@ function displayCorrectFeedBackPage(){
 function displayIncorrectFeedBackPage(){
    return `
       <div class="correct">
-         <img src="https://banner2.kisspng.com/20180223/hcw/kisspng-ico-font-awesome-scalable-vector-graphics-icon-red-x-word-no-vector-material-5a90eae643c105.9898124415194467582775.jpg" alt="red x">
+         <img src="https://www.iconsdb.com/icons/preview/red/x-mark-xxl.png" alt="red x">
          <p>Sorry but that isn't correct.</p>
          <p>The correct answer is: ${QUESTIONS[questionNumber - 1].correctAnswer}.</p>
          <button role="button" aria-label="next question" aria-pressed="false" class="btn js_next_question">Next Question</button>
