@@ -122,6 +122,9 @@ img {
    background-color: rgb(30, 32, 41);
    transition: 0.4s ease;
 }
+.radio-label {
+   margin-left: 10px;
+}
 .correct {
    font-size: 1.5rem;
    margin: 0 auto;
