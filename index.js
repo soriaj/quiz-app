@@ -192,7 +192,7 @@ function checkUserAnswer(){
 function displayCorrectFeedBackPage(){
    return `
       <div class="correct">
-         <img src="https://www.iconsdb.com/icons/preview/green/check-mark-3-xxl.png" alt="check mark">
+         <img src="./img/green-check-mark.png" alt="check mark">
          <p>Congrats, You got that right</p>
          <form>
             <button role="button" aria-label="next question" aria-pressed="false" class="btn js_next_question">Next Question</button>
@@ -203,7 +203,7 @@ function displayCorrectFeedBackPage(){
 function displayIncorrectFeedBackPage(){
    return `
       <div class="correct">
-         <img src="https://www.iconsdb.com/icons/preview/red/x-mark-xxl.png" alt="red x">
+         <img src="./img/red-x.png" alt="red x">
          <p>Sorry but that isn't correct.</p>
          <p>The correct answer is: ${QUESTIONS[questionNumber - 1].correctAnswer}.</p>
          <button role="button" aria-label="next question" aria-pressed="false" class="btn js_next_question">Next Question</button>

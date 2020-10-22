@@ -5,12 +5,12 @@
    color: white;
 }
 html {
-   background-color: black;
    height: 100vh;
 }
 body {
    margin: 0;
    color: white;
+   background-color: black;
 }
 .navbar {
    top: 0;
